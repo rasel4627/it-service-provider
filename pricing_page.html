@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="responsive.css">
+	<title>Contact</title>
+</head>
+<body>
+<!---------------------Header--------------------------------->
+	<div class="full_wrap header_bg">
+		<div id="sticker">
+			<div class="fixed">
+				<div class="header">
+					<header class="header_left left">
+						<a href="Home_page.html"><img src="img/header_logo.png" alt="Logo"></a>
+					</header>
+					<nav class="header_right right">
+						<ul id="nav">
+							<li><a href="Home_page.html">Home</a></li>
+							<li><a href="About_page.html">About</a></li>
+							<li class="active"><a href="#price">Pricing</a></li>
+							<li><a href="Review_page.html">Reviews</a></li>
+							<li><a href="Contact_page.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="full_wrap article5_bg">
+		<div class="fixed">
+			<div class="article5_wrapper" id="price">
+				<div class="article5_top" >
+					<h1>pricing option</h1>
+					<img src="img/article2_img1.png" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="article5_bottom">
+					<div class="article5_list left article5_margin1">
+						<ul class="ul_width_for_responsive">
+							<li><p>Basic</p></li>
+							<li class="list1_1"><img src="img/article5_list1_img.png" alt=""></li>
+							<li class="list1_2">Free for Life</li>
+							<li class="list1_3"></li>
+							<li><a href="#">1 gb of space</a></li>
+							<li><a href="#">10 gb of bandwidth</a></li>
+							<li><a href="#">3 websites</a></li>
+							<li><a href="#">Basic Customization</a></li>
+							<li><a href="#">wordpress integration</a></li>
+							<li><a href="#">email support</a></li>
+						</ul>
+					</div>
+					<div class="article5_list left article_middle">
+						<ul class="ul_width_for_responsive">
+							<li><p>Professional</p></li>
+							<li class="list2_1"><img src="img/article5_list1_img2.png" alt=""></li>
+							<li class="list2_2">Monthly Payment</li>
+							<li class="list2_3"><a href="#">OUR MOST POPULAR</a></li>
+							<li><a href="#">5 gb of space</a></li>
+							<li><a href="#">50 gb of bandwidth</a></li>
+							<li><a href="#">12 websites</a></li>
+							<li><a href="#">Advanced Customization</a></li>
+							<li><a href="#">wordpress integration</a></li>
+							<li><a href="#">email support</a></li>
+						</ul>
+					</div>
+					<div class="article5_list right article5_margin2">
+						<ul class="ul_width_for_responsive">
+							<li><p>Enterprise</p></li>
+							<li class="list3_1"><img src="img/article5_list1_img3.png" alt=""></li>
+							<li class="list3_2">Monthly Payment</li>
+							<li class="list3_3"></li>
+							<li><a href="#">Unlimited space</a></li>
+							<li><a href="#">unlimited bandwidth</a></li>
+							<li><a href="#">100 websites</a></li>
+							<li><a href="#">Advanced Customization</a></li>
+							<li><a href="#">wordpress integration</a></li>
+							<li><a href="#">24/7 customer support</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-----------------------------footer--------------------------->
+	<div class="full_wrap footer_bg">
+		<div class="fixed">
+			<div class="footer_wrapper">
+					<ul class="footer_social">
+						<li><a href="#"><img src="img/2social_icon1.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon2.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon3.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon4.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon5.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon6.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon7.png" alt=""></a></li>
+					</ul>
+					<p>&copy; 2020 This page is desined By <a href="https://www.facebook.com/juwel.ahmad002"target="blank">Juwel&Rasel</a>
+					</p>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="slider/js/responsive-menu.js"></script>
+
+	<script class="secret-source">
+        jQuery(document).ready(function($) {
+          
+  		$(document).ready(function() {
+			var s = $("#sticker");
+			var pos = s.position();					   
+			$(window).scroll(function() {
+				var windowpos = $(window).scrollTop();
+				if (windowpos >= pos.top) {
+					s.addClass("stick");
+				} else {
+					s.removeClass("stick");	
+				}
+				});
+			});
+          
+        });
+	</script>
+	<script type="text/javascript">
+		$(document).on('click','ul li',function(){
+			$(this).addClass('active').siblings().removeClass('active')
+		})
+	</script>
+
+	<script>
+  		domready(function(){
+		selectnav('nav', {
+		label: ''
+	});
+	prettyPrint()
+		})
+	</script>
+
+</body>
+</html>

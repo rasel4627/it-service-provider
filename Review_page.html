@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="responsive.css">
+	<title>Review</title>
+</head>
+<body>
+<!---------------------Header--------------------------------->
+	<div class="full_wrap header_bg">
+		<div id="sticker">
+			<div class="fixed">
+				<div class="header">
+					<header class="header_left left">
+						<a href="Home_page.html"><img src="img/header_logo.png" alt="Logo"></a>
+					</header>
+					<nav class="header_right right">
+						<ul id="nav">
+							<li><a href="Home_page.html">Home</a></li>
+							<li><a href="About_page.html">About</a></li>
+							<li><a href="pricing_page.html">Pricing</a></li>
+							<li class="active"><a href="Review_page.html">Reviews</a></li>
+							<li><a href="Contact_page.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+<!------------------Body------------------>
+	<div class="full_wrap about_article">
+		<div class="fixed">
+			<div class="about_article1">
+				<h1>Author</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Fugiat, nemo aperiam culpa, eaque inventore quis rerum? Accusantium earum possimus, fugiat inventore, distinctio adipisci architecto cumque quia itaque nostrum mollitia, voluptate! 	lorem Lorem ipsum dolor sit amet consectetur adipisicing, elit. Saepe perferendis adipisci quidem ut magni debitis quibusdam quae voluptatem optio labore cumque, alias qui impedit asperiores reprehenderit cum natus est ipsam. Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Cupiditate, commodi impedit ea vitae quibusdam veritatis animi perspiciatis voluptatum repudiandae debitis temporibus dolores error eos! Nam aliquid eos porro ex ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facere asperiores sed eaque veniam, sequi, tempore beatae rem at, voluptatibus inventore mollitia tempora nihil ratione? Amet assumenda cupiditate perferendis. Eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quod quo velit molestias officiis vitae vero aliquam omnis consectetur dolores sint eligendi eveniet corrupti architecto unde, ullam illo itaque numquam.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati molestias neque molestiae fugit reiciendis praesentium, est quod maiores atque repellendus corrupti esse non a officia tenetur asperiores. Sed, provident, fugit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos cumque, rerum esse illo perferendis voluptatum quae dolore repellat tempora ex, dolorum atque. Aperiam mollitia earum, doloribus excepturi ratione ex magni! </p>
+			</div>
+		</div>
+	</div>
+
+	<div class="full_wrap article6_bg">
+		<div class="fixed">
+			<div class="article6_wrapper">
+				<div class="article6_top article4_top">
+					<h1 class="article4_top">what's our customer are saying</h1>
+					<img src="img/article2_img1.png" alt="">
+					<p class="article4_top">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="article6_bottom">
+					<div class="article6_message left">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+						<img class="left" src="img/j.jpg" alt="">
+						<h3 class="">Md.juwel Ahmad</h3>	
+						<h5>Manager</h5>
+					</div>
+					<div class="article6_message article6_margin left article6_middle">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+						<img src="img/j2.jpg" alt="">
+						<h3>Jeremy H.</h3>	
+						<h5>Freelancer</h5>
+					</div>
+					<div class="article6_message article6_margin right ">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+						<img src="img/j.jpg" alt="">
+						<h3>Jeremy H.</h3>	
+						<h5>Photographer</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-----------------------------footer--------------------------->
+	<div class="full_wrap footer_bg">
+		<div class="fixed">
+			<div class="footer_wrapper">
+					<ul class="footer_social">
+						<li><a href="#"><img src="img/2social_icon1.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon2.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon3.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon4.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon5.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon6.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon7.png" alt=""></a></li>
+					</ul>
+					<p>&copy; 2020 This page is desined By <a href="https://www.facebook.com/juwel.ahmad002"target="blank">Juwel&Rasel</a>
+					</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="slider/js/responsive-menu.js"></script>
+
+	<script class="secret-source">
+        jQuery(document).ready(function($) {
+          
+  		$(document).ready(function() {
+			var s = $("#sticker");
+			var pos = s.position();					   
+			$(window).scroll(function() {
+				var windowpos = $(window).scrollTop();
+				if (windowpos >= pos.top) {
+					s.addClass("stick");
+				} else {
+					s.removeClass("stick");	
+				}
+				});
+			});
+          
+        });
+	</script>
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script>
+		$(document).on('click','ul li',function(){
+			$(this).addClass('active').siblings().removeClass('active')
+		})
+	</script>
+
+	<script>
+  		domready(function(){
+		selectnav('nav', {
+		label: ''
+	});
+	prettyPrint()
+		})
+	</script>
+
+</body>
+</html>

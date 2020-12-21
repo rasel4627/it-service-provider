@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Contact</title>
+
+	<link rel="icon" href="img/icon.png">
+
+	<!-- contact logo call & email -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="responsive.css">
+
+</head>
+<body>
+<!---------------------Header--------------------------------->
+	<div class="full_wrap header_bg">
+		<div id="sticker">
+			<div class="fixed">
+				<div class="header">
+					<header class="header_left left">
+						<a href="Home_page.html"><img src="img/header_logo.png" alt="Logo"></a>
+					</header>
+					<nav class="header_right right">
+						<ul id="nav">
+							<li><a href="Home_page.html">Home</a></li>
+							<li><a href="About_page.html">About</a></li>
+							<li><a href="pricing_page.html">Pricing</a></li>
+							<li><a href="Review_page.html">Reviews</a></li>
+							<li class="active"><a href="Contact_page.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+<!------------------Article 1------------------>
+
+	<div class="full_wrap article7_bg">
+		<div class="fixed">
+			<div class="article7_wrapper contact_div1">
+				<h1>Contact Us</h1>
+				<img src="img/article2_img1.png" alt="">
+
+			</div>
+		</div>
+	</div>
+
+
+<!-- --------Article 2 --------------------------->
+	<div class="full_wrap article4_bg Article2">
+		<div class="fixed">
+			<div class="article4_wrapper">
+				<div class="article4_bottom">
+					<div class="article4_1 left">
+						<h2>Address</h2>
+						<ul>
+							<li>27/A</li>
+							<li>Lichubagan</li>
+							<li>Amberkhana</li>
+							<li>Sylhet,Bangladesh.</li>
+						</ul>
+					</div>
+					<div class="article4_1 left">
+						<h2>Contact</h2>
+						<ul>
+							<li><a href="#"><i class="fa fa-phone" style="font-size:20px;margin-right:5px;"></i>+8801719197485</a></li>
+							<li><a href="#"><i class="fa fa-phone" style="font-size:20px;margin-right:5px;"></i>+8801521428171</a></li>
+							<li><a href="#"><i class="fa fa-phone" style="font-size:20px;margin-right:5px;"></i>+8801782614627</a></li>
+						</ul>
+					</div>
+					<div class="article4_1 left">
+						<h2>Email</h2>
+						<ul>
+							<li style="margin-top: -3px;"><a href="#"><i class="material-icons" style="font-size:20px;margin-right:5px;">mail</i>md.ahmad1998@gmail.com</a></li>
+							<li><a href="#"><i class="material-icons" style="font-size:20px;margin-right:5px;">mail</i>rasel4627@gmail.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="full_wrap article8_bg">
+		<div class="fixed">
+			<div class="article8_wrapper">
+				<h1 class="article4_top">contact us</h1>
+				<img src="img/article2_img1.png" alt="">
+				<p class="article4_top">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<div class="form_left left">
+					<form action="">
+						<input class="input" type="text"placeholder="Name" required=""><br>
+						<input class="input" type="email"placeholder="Email" required=""><br>
+						<input class="input" type="text"placeholder="subject" required>
+					</form>
+				</div>
+				<div class="form_right right">
+					<input class="input2" type="text"placeholder="Message" required="">
+				</div>
+				<input class="submit" type="submit" value="Send Message">
+			</div >
+
+			</div>
+			
+	</div>
+
+
+
+<!-----------------------------footer--------------------------->
+	<div class="full_wrap footer_bg">
+		<div class="fixed">
+			<div class="footer_wrapper">
+					<ul class="footer_social">
+						<li><a href="#"><img src="img/2social_icon1.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon2.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon3.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon4.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon5.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon6.png" alt=""></a></li>
+						<li><a href="#"><img src="img/2social_icon7.png" alt=""></a></li>
+					</ul>
+					<p>&copy; 2020 This page is desined By <a href="https://www.facebook.com/juwel.ahmad002"target="blank">Juwel&Rasel</a>
+					</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="slider/js/responsive-menu.js"></script>
+
+	<script class="secret-source">
+        jQuery(document).ready(function($) {
+          
+  		$(document).ready(function() {
+			var s = $("#sticker");
+			var pos = s.position();					   
+			$(window).scroll(function() {
+				var windowpos = $(window).scrollTop();
+				if (windowpos >= pos.top) {
+					s.addClass("stick");
+				} else {
+					s.removeClass("stick");	
+				}
+				});
+			});
+          
+        });
+	</script>
+
+	<script>
+		$(document).on('click','ul li',function(){
+			$(this).addClass('active').siblings().removeClass('active')
+		})
+	</script>
+
+
+	<script>
+  		domready(function(){
+		selectnav('nav', {
+		label: ''
+	});
+	prettyPrint()
+		})
+	</script>
+
+</body>
+</html>
